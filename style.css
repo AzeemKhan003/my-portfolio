@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    font-family: arial;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+h2{
+    font-size: 35px;
+    font-family: 'Georgia', serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFBD39;
+    height: 65px;
+    background-color:  rgba(0, 0, 0, 0.8); 
+    align-items: center;
+    margin-top: 20px;
+}
+h1{
+    font-size: 35px;
+    font-family: 'Georgia', serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFBD39;
+    align-items: center;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+}
+.nav-logo{
+    height: 90px;
+    width: 150px;
+    margin-left: 100px;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    background-image: url("logo-pic.png");
+    background-size: cover;
+    height: 55px;
+    width: 120px;
+}
+
+.name{
+    font-size: 10px;
+    width:140px;
+}
+.nav-left{
+   height: 90px;
+   width: 50%;
+   display: flex;
+   margin-right: 100px;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.hover-text a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.hover-text:hover a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #FFBD39;
+}
+
+/** home section **/
+.home-section{
+    height:100vh;
+    background-image: url("home-section.jpg");
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size:30px;
+}
+#typing-text{
+    color: #FFBD39;
+}
+
+
+/** about section **/
+.about-section{
+    height: 500px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.contaner1{
+    height: 300px;
+    width: 40%;
+    position: relative;
+      left: 130px;
+    line-height: 1.5;
+}
+.about{
+    height: 400px;
+    width: 100%;
+}
+.about p{
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 10px;
+}
+
+.contaner2{
+    height: 300px;
+    width: 30%;
+    position: relative;
+     top: 20px;
+     left: 160px;
+}
+.my-pic{
+    height: 380px;
+    width: 400px;
+    background-image: url("WhatsApp Image 2024-01-17 at 8.27.27 PM.jpeg");
+    background-size: cover;
+}
+
+/** Resume section **/
+
+.resume{
+    display: flex;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content; space-evenly;
+}
+.box{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    margin: 20px;
+    width: 35%;
+    line-height: 1.5;
+    padding: 50px;
+}
+#year{
+    font-size: 30px;
+    font-family: 'Georgia', serif;
+    color: #FFBD39;
+}
+#course{
+    font-size: 30px;
+    font-family: 'Georgia', serif;
+    color: white;
+}
+#college{
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    color: #999999;
+}
+#CGPA{
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    color: #999999;
+}
+#description{
+    font-size: 17px;
+    font-family: 'Georgia', serif;
+    color: #999999;
+    margin-top: 15px;
+}
+.download-button {
+    display: inline;
+    padding: 20px;
+    background-color: #FFBD39;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.sub-box{
+    margin-top: 20px;
+}
+.download-button:hover {
+    background-color: #f29633;
+}
+.download-resume{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* skills section */
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    height: 300px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 20px 0px 15px;
+    margin: 20px;
+    position: relative;
+      left: 100px;
+    line-height: 1.5;
+    padding: 40px;
+} 
+
+.skill-bar {
+    margin-bottom: 10px;
+    width: 35%;
+}
+.skill-alingment{
+    display: flex;
+}
+.skill-name {
+    float: left;
+    width: 120px;
+    margin-right: 90px;
+}
+.skill-parcentage{
+    margin-left: 90px;
+}
+
+.skill-meter {
+    height: 10px;
+    background-color: #999999;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    height: 100%;
+    width: 0;
+    background-color: #ffbd39;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+/* Portfolio section */
+
+.my-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 110vh;
+    margin-top: 20px;
+    position: relative;
+     left: 10%;
+     right: 10%;
+     background-color: #f0f0f0;
+}
+.clone-image{
+    border: 2px solid black;
+    width: 300px; 
+    height: 300px; 
+    background-size: 140%;
+    position: relative;
+    overflow: hidden;
+    transition: background-size 0.3s ease-in-out;
+    margin: 10px;
+}
+.project-box{
+    height: 375px;
+    width: 27%;
+    gap: 10px;
+}
+.hover-box{
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    height: 25px;
+    text-align: center;
+    width: 50%;
+    position: relative;
+      left: 70px;
+}
+.hover-box:hover{
+    background:  #FFBD39;
+}
+.overlay {
+    height:100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+.clone-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.clone-image:hover .overlay {
+    top: 0;
+    opacity: 1;
+} 
+.clone-image:hover {
+  background-size: 115%;
+}
+.title{
+    position: absolute;
+       bottom: 0;
+       left: 0;
+    font-size: 25px;
+    font-family: 'Georgia', serif;
+    opacity: 1.5;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: white;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+/* Contact Section */
+ .contact-section1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px ;
+    padding: 40px;
+    width: 70%;
+    background-color: #f0f0f0;
+    position: relative;
+      left: 150px;
+}
+
+.contact-box {
+    text-align: center;
+    max-width: 200px;
+}
+
+.contact-logo {
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 10px;
+}
+.contact-section2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 40px;
+    height: 500px;
+    width: 70%;
+    background-color: #f0f0f0;
+    position: relative;
+      left: 150px;
+}
+.my-photo{
+    height: 500px;
+    width: 50%;
+    background-image: url("WhatsApp Image 2024-01-17 at 8.27.27 PM.jpeg");
+    background-image: cover;
+}
+.contact-form{
+    height: 500px;
+    width: 50%;
+    padding: 15px;
+    justify-content: center;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.form-group{
+    margin-bottom: 30px;
+}
+#message{
+    height: 150px;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    height: 50px;
+    width: 45%;
+    background-color: #FFBD39;
+    border: 2px solid black;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 30px;
+}
+
+/* footer section */
+.social-footer {
+    padding: 20px;
+    text-align: center;
+}
+.social-icons a {
+    margin: 0 15px;
+    text-decoration: none;
+}
+.social-icons i {
+    font-size: 30px;
+}
+.copyright-footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
